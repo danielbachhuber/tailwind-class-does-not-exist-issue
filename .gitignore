@@ -1,0 +1,20 @@
+# Misc
+.DS_Store
+*.sql
+*.zip
+*.log
+*.xml
+*.csv
+mix-manifest.json
+db.php
+
+# Site directories.
+uploads/
+
+# Handled by Composer.
+plugins/
+
+# Build tools.
+vendor/
+node_modules/
+assets/dist/

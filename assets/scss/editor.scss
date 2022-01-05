@@ -1,0 +1,27 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+$sm: "576px";
+$md: "768px";
+$lg: "992px";
+$xl: "1100px";
+
+@import "./01-generic/generic.scss";
+
+.wp-editor {
+	@apply m-4;
+	* {
+		@apply font-normal;
+		-webkit-font-smoothing: auto;
+	}
+	strong {
+		@apply font-bold;
+	}
+}
+
+blockquote cite {
+	display: block;
+}

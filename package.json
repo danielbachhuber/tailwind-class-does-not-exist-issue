@@ -1,0 +1,88 @@
+{
+    "name": "foodbloggerpro",
+    "version": "0.0.0",
+    "author": "Food Blogger Pro",
+    "license": "Proprietary",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/pinchofyum/foodbloggerpro-v2.git"
+    },
+    "private": true,
+    "scripts": {
+        "dev": "npm run development",
+        "prod": "npm run production",
+        "development": "mix",
+        "watch": "mix watch",
+        "watch-poll": "mix watch -- --watch-options-poll=1000",
+        "hot": "mix watch --hot",
+        "production": "mix --production",
+        "lint": "cross-env eslint --ext js,vue assets/js/src/components/*",
+        "test": "jest",
+        "tdd": "jest --watch"
+    },
+    "devDependencies": {
+        "@babel/core": "^7.16.5",
+        "@babel/plugin-syntax-jsx": "^7.16.7",
+        "@babel/plugin-transform-runtime": "^7.16.5",
+        "@babel/preset-env": "^7.16.5",
+        "@vue/test-utils": "^1.3.0",
+        "@wordpress/babel-preset-default": "^6.4.1",
+        "autoprefixer": "^10.4.1",
+        "babel-core": "^7.0.0-bridge.0",
+        "babel-jest": "^27.4.5",
+        "babel-loader": "^8.2.3",
+        "cross-env": "^7.0",
+        "eslint": "^8.5.0",
+        "eslint-plugin-jest": "^25.3.4",
+        "eslint-plugin-vue": "^8.2.0",
+        "fontawesome-svg-sprite-generator": "^1.0.2",
+        "jest": "^27.4.5",
+        "laravel-mix": "^6.0.39",
+        "laravel-mix-tailwind": "^0.1.2",
+        "moxios": "^0.4.0",
+        "postcss": "^8.4.5",
+        "resolve-url-loader": "^4.0.0",
+        "sass": "^1.45.2",
+        "sass-loader": "^12.4.0",
+        "style-loader": "^3.3.1",
+        "tailwindcss-owl": "^2.0.0",
+        "vue": "^2.6.14",
+        "vue-jest": "^3.0.7",
+        "vue-loader": "^15.9.8",
+        "vue-template-compiler": "^2.6.14",
+        "webpack": "^5.65.0",
+        "webpack-notifier": "^1.15.0"
+    },
+    "prettier": {
+        "tabWidth": 4
+    },
+    "jest": {
+        "moduleFileExtensions": [
+            "js",
+            "json",
+            "vue"
+        ],
+        "setupFiles": [
+            "<rootDir>/jest.setup.js"
+        ],
+        "testEnvironment": "jsdom",
+        "transform": {
+            "^.+\\.js$": "babel-jest",
+            ".*\\.(vue)$": "vue-jest"
+        },
+        "roots": [
+            "<rootDir>/assets/js/src/components/"
+        ]
+    },
+    "dependencies": {
+        "@loomhq/loom-sdk": "^2.27.0",
+        "@vimeo/player": "^2.16.2",
+        "axios": "^0.24.0",
+        "dayjs": "^1.10.7",
+        "dayjs-plugin-utc": "^0.1.2",
+        "intercom-facade": "^0.1.1",
+        "lodash": "^4.17.21",
+        "tailwindcss": "^3.0.10",
+        "vue-js-modal": "^2.0.1"
+    }
+}
