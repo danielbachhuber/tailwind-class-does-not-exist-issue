@@ -433,11 +433,11 @@ module.exports = {
 			none: 'none',
 		},
 		flexGrow: {
-			'0': 0,
+			'0': '0',
 			DEFAULT: 1,
 		},
 		flexShrink: {
-			'0': 0,
+			'0': '0',
 			DEFAULT: 1,
 		},
 		listStyleType: {
@@ -446,7 +446,7 @@ module.exports = {
 			decimal: 'decimal',
 		},
 		inset: {
-			'0': 0,
+			'0': '0',
 			auto: 'auto',
 		},
 		container: {}
